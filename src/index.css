@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 42 6% 98%;  /* off-white */
+    --foreground: 20 14% 4%;  /* dark stone */
+
+    --card: 42 6% 98%;  /* off-white */
+    --card-foreground: 20 14% 4%;
+
+    --popover: 42 6% 98%;
+    --popover-foreground: 20 14% 4%;
+
+    --primary: 82 14% 40%; /* olive green */
+    --primary-foreground: 42 6% 98%;
+
+    --secondary: 60 5% 85%; /* light stone */
+    --secondary-foreground: 20 14% 4%;
+
+    --muted: 60 5% 90%; /* lighter stone */
+    --muted-foreground: 25 5% 45%;
+
+    --accent: 82 14% 40%; /* olive green */
+    --accent-foreground: 42 6% 98%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 60 5% 85%;
+    --input: 60 5% 90%;
+    --ring: 82 14% 40%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-off-white text-stone-800 font-sans antialiased;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold text-stone-900;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+}
+
+@layer utilities {
+  .adventure-card {
+    @apply bg-white border border-stone-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-200;
+  }
+
+  .adventure-button {
+    @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-md transition-colors duration-200;
+    @apply bg-olive-600 text-white hover:bg-olive-700;
+  }
+
+  .adventure-button-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-md transition-colors duration-200;
+    @apply border border-olive-600 text-olive-600 hover:bg-olive-50;
+  }
+
+  .text-overlay {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.6));
+  }
+}
