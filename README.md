@@ -1,6 +1,6 @@
 Welcome to your Project
 Project Info
-URL: [Your project URL here]
+URL: [https://github.com/Gokulakrihnan/GOCART]
 
 How can I edit this code?
 There are several ways to edit your application:
@@ -17,10 +17,10 @@ sh
 Copy
 Edit
 # Step 1: Clone the repository using the project’s Git URL.
-git clone <YOUR_GIT_URL>
+git clone <https://github.com/Gokulakrihnan/GOCART>
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd <COCART>
 
 # Step 3: Install the necessary dependencies.
 npm i
